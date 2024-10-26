@@ -1,0 +1,186 @@
+Обнуление отступов и границ у ВСЕХ элементов * {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+/* Изменение подсчета ширины блока для удобной верстки */
+*,
+*::before, ::after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Удаление линии обводки некоторых браузеров */
+:focus, :active {
+    outline: none;
+}
+
+a:focus, a:active {
+    outline: none;
+}
+
+/* Присваивание свойства блочности */
+nav, footer, header, aside {
+    display: block;
+}
+
+/* Выравнивание размеров и шрифтов для различных браузеров */
+html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    padding: 10px;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+/* Наследование семества шрифта тегов форм */
+input, button, textarea {
+    font-family: inherit;
+}
+
+/* Удаление "крестика" в input в Internet Explorer */
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Удаление отступов в Mozila FireFox */
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+/* Очистка стилей ссылок */
+a, a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* Очистка стилей маркированных списков */
+ul, li {
+    list-style: none;
+}
+
+/* ??? */
+img {
+    vertical-align: top;
+}
+
+/* Обнуление шрифта и размера зоголовков */
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
+div {
+    border-radius: 15px;
+    box-shadow: 0 0 10px black;
+    margin-bottom: 30px;
+}
+
+.block {
+    margin: 0 0 30px 0;
+}
+
+.block p {
+    font-size: 18px;
+    line-height: 24px;
+
+}
+
+.block p:nth-child(1):hover {
+    border: 13px dashed black;
+    background-color: white;
+    text-transform: uppercase;
+
+}
+
+.block p:nth-child(2) {
+    border: 1px solid black;
+    background-color: blue;
+}
+
+.block p:nth-child(3) {
+    border: 1px solid black;
+    background-color: red;
+}
+
+
+.link {
+    color: red;
+}
+
+.link:visited {
+    color: yellow;
+}
+
+.link:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+.link:active {
+    color: orange
+}
+
+
+.textinput {
+    border: 1px dashed red;
+    height: 50px;
+    padding: 0px 15 px;
+    font-size: 24px;
+    width: 300px;
+    margin: 0 0 10px 0;
+
+}
+
+.textinput:focus {
+    box-shadow: 0 0 10px black;
+}
+
+.textbutton {
+    display: block;
+    width: 300px;
+    height: 50px;
+    background-color: darkolivegreen;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0 0 10px 0;
+}
+
+.list {
+    font-size: 24px;
+    margin: 0 0 30px 0;
+}
+
+.list li:first-child {
+    color: red;
+
+}
+
+.list li:last-child {
+    color: rgb(255, 0, 242);
+}
+
+.list li:nth-child(odd) {
+    color: seagreen;
+    text-decoration: line-through;
+    font-style: italic;
+}
+
+.list li:nth-child(even) {
+    text-transform: uppercase;
+}

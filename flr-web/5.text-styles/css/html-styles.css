@@ -1,0 +1,9 @@
+.big_red {
+    font-size: 30px;
+    color: red;
+}
+
+.block>p {
+    font-style: italic;
+    color: green;
+}

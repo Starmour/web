@@ -1,0 +1,120 @@
+Обнуление отступов и границ у ВСЕХ элементов * {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+/* Изменение подсчета ширины блока для удобной верстки */
+*,
+*::before, ::after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Удаление линии обводки некоторых браузеров */
+:focus, :active {
+    outline: none;
+}
+
+a:focus, a:active {
+    outline: none;
+}
+
+/* Присваивание свойства блочности */
+nav, footer, header, aside {
+    display: block;
+}
+
+/* Выравнивание размеров и шрифтов для различных браузеров */
+html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    padding: 10px;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+/* Наследование семества шрифта тегов форм */
+input, button, textarea {
+    font-family: inherit;
+}
+
+/* Удаление "крестика" в input в Internet Explorer */
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Удаление отступов в Mozila FireFox */
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+/* Очистка стилей ссылок */
+a, a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* Очистка стилей маркированных списков */
+ul, li {
+    list-style: none;
+}
+
+/* ??? */
+img {
+    vertical-align: top;
+}
+
+/* Обнуление шрифта и размера зоголовков */
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
+div {
+    height: 300px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px black;
+    margin-bottom: 30px;
+}
+
+.colored-block {
+    background: darkolivegreen;
+
+
+}
+
+body {
+    background: url('../img/oak.jpg') 0 0 no-repeat fixed
+}
+
+.imaged-block {
+    background: url('../img/img-1.JPG') no-repeat;
+    /* no-repeat, repeat-x, repeat-y, space, round */
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    /* contain cover  */
+
+}
+
+.imaged-block-2 {
+    background: url('../img/grooty.png') center/200px repeat, url('../img/img-1.JPG') 100%/cover no-repeat fixed;
+
+    /* background: url('../path') position/size repeation, url('../path-2') size/ repeation fixed; */
+
+
+}

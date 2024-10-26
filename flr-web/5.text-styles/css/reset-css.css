@@ -1,0 +1,101 @@
+/* Обнуление отступов и границ у ВСЕХ элементов */
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+/* Изменение подсчета ширины блока для удобной верстки */
+*,
+*::before,
+::after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Удаление линии обводки некоторых браузеров */
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+/* Присваивание свойства блочности */
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+/* Выравнивание размеров и шрифтов для различных браузеров */
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+/* Наследование семества шрифта тегов форм */
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+/* Удаление "крестика" в input в Internet Explorer */
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Удаление отступов в Mozila FireFox */
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+/* Очистка стилей ссылок */
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* Очистка стилей маркированных списков */
+ul,
+li {
+    list-style: none;
+}
+
+/* ??? */
+img {
+    vertical-align: top;
+}
+
+/* Обнуление шрифта и размера зоголовков */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400;
+}

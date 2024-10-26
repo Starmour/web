@@ -1,0 +1,511 @@
+    @font-face {
+        font-family: "Philosopher";
+        src: url(./fonts/Philosopher/Philosopher-Regular.ttf);
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        font-family: serif;
+        background-image: url(../img/fon.jpg);
+        font-family: "Philosopher";
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    section {
+        padding-top: 100px;
+    }
+
+    h1 {
+        text-align: center;
+        font-weight: bold;
+        font-size: 50px;
+
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+
+        box-sizing: border-box;
+        /* нулевые отступы для всех объектов по умолчанию */
+    }
+
+
+    ul li {
+        /* display: block; */
+        list-style-type: none;
+        /* УБИРАЕТ ТОЧКИ ЭЛЕМЕНТОВ СПИСКА!!!???*/
+        width: auto;
+    }
+
+    .container {
+        margin: 0 auto;
+        /* Позиционирование по центру */
+    }
+
+    main {
+        padding-top: 100px;
+    }
+
+    .header {
+        background: #40291b;
+        /* цвет шапки */
+        margin: 0 auto;
+        padding: 0 10px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 5;
+    }
+
+    .header img {
+        width: 200px;
+    }
+
+    .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* выравнивание по вертикали у объектов с display flex */
+    }
+
+    .header a {
+        /*свйоства ссылок шапки*/
+        color: #efdfcf;
+        font-size: 20px;
+    }
+
+    /*Свойства класса menu*/
+    .menu {
+        display: flex;
+        width: 100%;
+        right: 0;
+        justify-content: space-between;
+        padding: 40px;
+        align-items: center;
+    }
+
+    .menu li {
+        transition: all 0.5 ease;
+    }
+
+    .menu li:hover {
+        opacity: 0.8;
+    }
+
+
+    /*Элементы класса menu*/
+    .menu li a {
+        text-transform: uppercase;
+        text-decoration: none;
+        margin-right: 10px;
+        width: auto;
+    }
+
+    .contacts {
+        width: 250px;
+        padding: 0;
+        display: flex;
+        font-size: 10px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .tel {
+        text-decoration: none;
+        width: auto;
+
+    }
+
+    .wrapper {
+        border: 2px solid blue;
+        background-color: #efdfcf;
+        display: flex;
+    }
+
+    .swiper {
+        display: flex;
+        max-width: 50%;
+        height: 500px;
+        margin: 10px 10px;
+        /* Расположение по середине  */
+        border: 2px solid red;
+        border-radius: 50px;
+
+    }
+
+    .swiper-wrapper {
+        box-sizing: content-box;
+        border: 2px solid green;
+
+    }
+
+    .swiper-slide {
+        /* display: flex; */
+    }
+
+    .swiper-slide img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        /* height: 100%; */
+    }
+
+    .swiper-button-prev {
+        background-color: transparent;
+        left: 0px;
+        margin: auto;
+        top: 0;
+        height: 90%;
+        width: 50%;
+    }
+
+    .swiper-button-next {
+        background-color: transparent;
+        right: 0px;
+        margin: auto;
+        top: 0;
+        height: 90%;
+        width: 50%;
+    }
+
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+        color: #efdfcf;
+        font-size: 30px;
+
+    }
+
+    .swiper-pagination-bullet {
+        background-color: transparent;
+        width: 20px;
+        height: 10px;
+        /* opacity: 1; */
+        border-radius: 5px;
+        border: 2px solid #40291b;
+        z-index: 150;
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: #efdfcf;
+
+    }
+
+    .info {
+        display: flex;
+        text-align: center;
+        align-items: center;
+    }
+
+    .left-info,
+    .right-info {
+        padding: 20px;
+    }
+
+
+
+    .place__wrap {
+        display: flex;
+        align-items: center;
+        /* justify-content: center; */
+        height: 550px;
+        background-image: url(../img/img-3.jpg);
+        /* Тут изменен путь ! */
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        text-align: center;
+        cursor: pointer;
+    }
+
+
+    .persons {
+        display: flex;
+        height: 500px;
+        align-items: center;
+        text-align: center;
+        padding: 0 300px;
+    }
+
+    .emp {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        background: white;
+        margin: auto;
+    }
+
+    .emp h1 {
+        font-size: 25px;
+    }
+
+    .quest {
+        height: 750px;
+        margin: auto;
+    }
+
+    .quest__wrap {
+        background: darkolivegreen;
+        height: 650px;
+    }
+
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .prod {
+        height: 100px;
+        width: 100px;
+        background-color: bisque;
+        margin: 25px;
+        margin-bottom: 50px;
+        border-radius: 25px;
+        text-align: center;
+        font-size: 20px;
+        padding-top: 10px;
+    }
+
+    iframe {
+        border-radius: 50px;
+        width: 100%;
+        height: 350px;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+
+
+
+
+    .footer {
+        background-color: #40291b;
+        height: 100px;
+        margin-bottom: 0;
+        color: bisque;
+        text-align: center;
+        padding-top: 25px;
+    }
+
+    .top {
+        display: block;
+        height: 40px;
+        width: 40px;
+        position: fixed;
+        font-size: 30px;
+        text-align: center;
+        background: #40291b;
+        border: solid #ffffff;
+        border-radius: 10px;
+        color: #fff;
+        align-items: flex-end;
+        top: 90%;
+        left: 95%;
+        z-index: 200;
+
+    }
+
+
+    /* !!!!!!!FORM!!!!!!!! */
+
+    .form-wrap {
+        width: 800px;
+        background: #40291b;
+        border-radius: 20px;
+        margin: auto;
+        margin-bottom: 100px;
+    }
+
+    .form-wrap * {
+        transition: .1s linear;
+    }
+
+    .profile {
+        width: 240px;
+        float: left;
+        text-align: center;
+        /* padding: 30px; */
+    }
+
+    form {
+        background: white;
+        float: left;
+        width: calc(100% - 240px);
+        padding: 30px;
+        border-radius: 0 20px 20px 0;
+        color: #7b7b7b;
+    }
+
+    .form-wrap:after,
+    form div:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    form div {
+        margin-bottom: 15px;
+        position: relative;
+    }
+
+    .profile h1 {
+        font-size: 24px;
+        font-weight: 400;
+        position: relative;
+        color: #efdfcf;
+    }
+
+    .profile h1:after {
+        content: "\f138";
+        font-size: 40px;
+        font-family: FontAwesome;
+        position: absolute;
+        top: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /********************** стилизация элементов формы **********************/
+    label,
+    span {
+        display: block;
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+        border-width: 0;
+        outline: none;
+        margin: 0;
+        width: 100%;
+        padding: 10px 15px;
+        background: #e6e6e6;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus {
+        box-shadow: inset 0 0 0 2px rgba(0, 0, 0, .2);
+    }
+
+    .radio label {
+        position: relative;
+        padding-left: 50px;
+        cursor: pointer;
+        width: 50%;
+        float: left;
+        line-height: 40px;
+    }
+
+    .radio input {
+        position: absolute;
+        opacity: 0;
+    }
+
+    .radio-control {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 40px;
+        width: 40px;
+        background: #e6e6e6;
+        border-radius: 50%;
+        text-align: center;
+    }
+
+    .male:before {
+        content: "\f222";
+        font-family: FontAwesome;
+        font-weight: bold;
+    }
+
+    .female:before {
+        content: "\f221";
+        font-family: FontAwesome;
+        font-weight: bold;
+    }
+
+    .radio label:hover input~.radio-control,
+    .radiol input:focus~.radio-control {
+        box-shadow: inset 0 0 0 2px rgba(0, 0, 0, .2);
+    }
+
+    .radio input:checked~.radio-control {
+        color: red;
+    }
+
+    select {
+        width: 100%;
+        cursor: pointer;
+        padding: 10px 15px;
+        outline: 0;
+        border: 0;
+        background: #e6e6e6;
+        color: #7b7b7b;
+        -webkit-appearance: none;
+        /*убираем галочку в webkit-браузерах*/
+        -moz-appearance: none;
+        /*убираем галочку в Mozilla Firefox*/
+    }
+
+    select::-ms-expand {
+        display: none;
+        /*убираем галочку в IE*/
+    }
+
+    .select-arrow {
+        position: absolute;
+        top: 38px;
+        right: 15px;
+        width: 0;
+        height: 0;
+        pointer-events: none;
+        /*активизируем показ списка при нажатии на стрелку*/
+        border-style: solid;
+        border-width: 8px 5px 0 5px;
+        border-color: #7b7b7b transparent transparent transparent;
+    }
+
+    button {
+        padding: 10px 0;
+        border-width: 0;
+        display: block;
+        width: 120px;
+        margin: 25px auto 0;
+        background: #40291b;
+        color: white;
+        font-size: 14px;
+        outline: none;
+        text-transform: uppercase;
+    }
+
+    /********************** добавляем форме адаптивность **********************/
+    @media (max-width: 600px) {
+        .form-wrap {
+            margin: 20px auto;
+            max-width: 550px;
+            width: 100%;
+        }
+
+        .profile,
+        form {
+            float: none;
+            width: 100%;
+        }
+
+        .profile h1 {
+            margin-top: 0;
+            padding-bottom: 50px;
+        }
+
+        form {
+            border-radius: 0 0 20px 20px;
+        }
+    }
